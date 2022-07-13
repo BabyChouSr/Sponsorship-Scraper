@@ -15,8 +15,6 @@ pip install webdriver-manager
 pip install pandas
 pip install jupyter
 pip install tldextract
-pip install free-proxy
-pip install fake_useragent
 ```
 
 ## Step two: Place your linkedin information into `parameters.py`
