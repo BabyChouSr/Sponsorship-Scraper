@@ -10,7 +10,6 @@ git clone https://github.com/BabyChouSr/Sponsorship-Scraper.git
 
 ```
 pip install selenium
-pip install clearbit
 pip install parsel
 pip install webdriver-manager
 pip install pandas
