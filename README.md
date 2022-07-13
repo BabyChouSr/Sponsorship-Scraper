@@ -13,8 +13,8 @@ pip install selenium
 pip install parsel
 pip install webdriver-manager
 pip install pandas
-pip install jupyter
 pip install tldextract
+pip install bs4
 ```
 
 ## Step two: Place your linkedin information into `parameters.py`
