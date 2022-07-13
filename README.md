@@ -2,6 +2,10 @@
 
 ## Step zero: clone this repo
 
+```
+git clone https://github.com/BabyChouSr/Sponsorship-Scraper.git
+```
+
 ## Step one: install necessary python packages
 
 ```
