@@ -9,7 +9,8 @@ from time import sleep
 from selenium import webdriver
 import os
 import sys
-import clearbit
+# import clearbit
+import requests
 import random
 from tldextract import extract
 import pandas as pd
@@ -30,7 +31,7 @@ import time
 
 FILE_NAME = '../data/recruiters.csv'
 FIELDS = ['Name', 'Job Title', 'Link', 'Domain Name']
-clearbit.key = parameters.clearbit_key
+# clearbit.key = parameters.clearbit_key
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
 
@@ -128,7 +129,10 @@ def getLinkedinProfiles():
     print("Searching for these companies:", parameters.companies)
     for company in parameters.companies:
         company_search = f'site:linkedin.com/in/ AND {company} AND technical recruiter'
-        domain_name =  clearbit.NameToDomain.find(name=company)['domain']
+        # domain_name =  clearbit.NameToDomain.find(name=company)['domain']
+        headers = {'Authorization': "Bearer " + parameters.clearbit_key}
+        resp_json = requests.get(f'https://company.clearbit.com/v1/domains/find?name=:{company}', headers=headers).json()
+        domain_name = resp_json['domain']
         driver.get('https://www.google.com')
         sleep(2)
         search_query = driver.find_element(By.NAME,'q')
