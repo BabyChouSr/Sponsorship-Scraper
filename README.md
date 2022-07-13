@@ -19,16 +19,15 @@ pip install tldextract
 
 ## Step two: Place your linkedin information into `parameters.py`
 
+Specifically, change the `linkedin_username` and `linkedin_password` to yours.
+
 ## Step three: Place companies you are sourcing in companies.txt
+
+Place each company on a new line.
 
 ## Step four: Run LinkedinScraper.py and keep tabs open
 
-LinkedinScraper will create a file called recruiters.csv
-
-## Step five: Run EmailPermuter.ipynb
-
-EmailPermuter will permute all the names generated from LinkedinScraper with their company to create plausible emails used <br>
-The output will be in out/permutedEmailsResult.csv
+LinkedinScraper will create a file called recruiters.csv and permutedEmailsResult.csv. Recruiters.csv is result of webscraping and then permutedEmailsResult is the one that has all the emails generated and gone through different permutations of possible emails.
 
 ## Important Notes
 
