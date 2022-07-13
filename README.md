@@ -8,13 +8,10 @@ git clone https://github.com/BabyChouSr/Sponsorship-Scraper.git
 
 ## Step one: install necessary python packages
 
+Inside of the Sponsorship-Scraper directory, run
+
 ```
-pip install selenium
-pip install parsel
-pip install webdriver-manager
-pip install pandas
-pip install tldextract
-pip install bs4
+pip install -r requirements.txt
 ```
 
 ## Step two: Place your linkedin information into `parameters.py`
