@@ -11,12 +11,10 @@ git clone https://github.com/BabyChouSr/Sponsorship-Scraper.git
 Inside of the Sponsorship-Scraper directory, run
 
 ```
-pip install -r requirements.txt
+python setup.py
 ```
 
-## Step two: Place your linkedin information into `parameters.py`
-
-Specifically, change the `linkedin_username` and `linkedin_password` to yours.
+and follow the steps. It will ask you for your linkedin username and password and populate a text file in `data/linkedin_account.txt`.
 
 ## Step three: Place companies you are sourcing in companies.txt
 
