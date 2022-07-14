@@ -16,7 +16,7 @@ python setup.py
 
 and follow the steps. It will ask you for your linkedin username and password and populate a text file in `data/linkedin_account.txt`.
 
-## Step three: Place companies you are sourcing in companies.txt
+## Step three: Place companies you are sourcing in `data/companies.txt`
 
 Place each company on a new line.
 
